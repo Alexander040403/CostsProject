@@ -1,0 +1,44 @@
+.chart-container {
+  position: relative;
+  height: 400px;
+  margin-bottom: 30px;
+  margin-top: 30px
+}
+
+.chart-toggle-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+}
+
+.chart-toggle-btn {
+  padding: 5px 10px;  
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  width: 100px
+}
+
+.chart-toggle-btn:hover {
+  background: #e0e0e0;
+}
+
+.chart-toggle-btn.active {
+  background: #36a2eb;
+  color: white;
+  border-color: #36a2eb;
+}
+
+@media (max-width: 768px) {
+  .chart-toggle-buttons {
+    margin-top: 300px;
+    margin-right: 130px;
+  }
+}
+
